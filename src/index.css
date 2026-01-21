@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #13ec5b;
+}
+
+@layer {
+  .bg-grid-pattern {
+    background-image: radial-gradient(circle, #1a2e1f 0.0625rem, 0.0625rem);
+    background-size: 1.875rem 1.875rem;
+  }
+}
+
+body {
+  background-color: rgb(10 13 10 / var(--tw-bg-opacity, 1));
+  backdrop-filter: blur(var(--blur-md));
+}

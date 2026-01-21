@@ -1,0 +1,33 @@
+import React, { useState } from 'react'
+
+const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className='flex flex-row justify-start sm:justify-center sm:w-full m-2'>
+      <section className='fixed top-0.5 right-0.5 mr-5 sm:hidden border-2 rounded-sm border-[#00FF41] p-1 cursor-pointer' onClick={toggleMenu}>
+        <div className={`w-6 border-2 border-[#00FF41] my-0.5 transition duration-150 ease-in-out ${isOpen ? 'rotate-45 transition duration-150 ease-in-out translate-y-[0.30em]' : ''}`}></div>
+        <div className={`w-6 border-2 border-[#00FF41] my-0.5 transition duration-150 ease-in-out ${isOpen ? 'scale-0' : ''}`}></div>
+        <div className={`w-6 border-2 border-[#00FF41] my-0.5 transition duration-150 ease-in-out ${isOpen ? '-rotate-45 transition duration-150 ease-in-out -translate-y-[0.400em]' : ''}`}></div>
+      </section>
+        <ul className={`flex flex-col sm:flex-row gap-4 text-left sm:flex ${isOpen || 'hidden'}`}>
+            <li><a className='text-xs font-bold tracking-widest uppercase 
+            text-gray-400 hover:text-[#00FF41] transition-colors' href="">Inicio</a></li>
+            <li><a className='text-xs font-bold tracking-widest uppercase 
+            text-gray-400 hover:text-[#00FF41] transition-colors' href="">Servicios</a></li>
+            <li><a className='text-xs font-bold tracking-widest uppercase 
+            text-gray-400 hover:text-[#00FF41] transition-colors' href="">Portfolio</a></li>
+            <li><a className='text-xs font-bold tracking-widest uppercase 
+            text-gray-400 hover:text-[#00FF41] transition-colors' href="">¿Quienes somos?</a></li>
+            <li><a className='text-xs font-bold tracking-widest uppercase 
+            text-gray-400 hover:text-[#00FF41] transition-colors' href="">Contacto</a></li>
+        </ul>
+    </nav>
+  )
+}
+
+export default NavBar
