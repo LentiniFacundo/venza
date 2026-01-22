@@ -6,9 +6,18 @@
 
 @layer {
   .bg-grid-pattern {
-    background-image: radial-gradient(circle, #1a2e1f 0.0625rem, 0.0625rem);
+    background-image: radial-gradient(circle, #1a2e1f 1px, transparent 1px);
     background-size: 1.875rem 1.875rem;
   }
+
+  .hero-img {
+    background-image: url(/src/assets/heroimg.webp);
+  }
+
+  .metallic-glow {
+    box-shadow: 0 0 15px rgba(19, 236, 91, 0.3);
+  }
+  
 }
 
 body {
