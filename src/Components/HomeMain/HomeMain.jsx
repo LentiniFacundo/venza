@@ -15,21 +15,21 @@ const HomeMain = () => {
                 </h1>
             </div>
             <div className='flex flex-col gap-7 pl-4 w-full'>
-                <p className='sm:max-w-175 text-lg text-slate-400 leading-relaxed'>Desarrollamos ecosistemas web de alto rendimiento. 
+                <p className='sm:max-w-175 text-lg text-slate-400 leading-relaxed p-4'>Desarrollamos ecosistemas web de alto rendimiento. 
                     Desde E-commerce robustos hasta portafolios de alta gama y blogs. Combinamos estética moderna con código sólido.
                     Sitios ultrarrápidos que mejoran la retención de usuarios y el posicionamiento en Google.
                     Interfaces intuitivas que guían al visitante hacia la acción.</p>
                 <div className='flex flex-col gap-5 mb-3'>
-                    <button className='metallic-glow bg-primary text-gray-800 font-bold p-4 rounded-lg tracking-widest mr-2 shadow-md shadow-emerald-400 cursor-pointer'>VER PROYECTOS</button>
-                    <button className='bg-white/5 border border-white/10 text-base text-white font-bold p-4 rounded-lg tracking-widest mr-2 shadow-md cursor-pointer'>CONTACTAR</button>
+                    <button className='metallic-glow bg-primary text-gray-800 font-[1000] p-4 rounded-lg tracking-widest mr-2 shadow-md shadow-emerald-400 cursor-pointer'>VER PROYECTOS</button>
+                    <button className='bg-white/5 border border-white/10 text-base text-white font-[1000] p-4 rounded-lg tracking-widest mr-2 shadow-md cursor-pointer'>CONTACTAR</button>
                 </div>
             </div>
-            <div className='flex flex-row justify-center mb-4 w-full bg-grid-pattern'>
-                <div className='mt-5 w-xs sm:w-3xl rounded-xl metallic-glow border'>
+            <div className='flex flex-row justify-center mb-6 w-full bg-grid-pattern'>
+                <div className='mt-5 w-xs sm:w-3xl rounded-xl metallic-glow border -inset-4 bg-primary/20'>
                     <img src={heroimg} alt="Hero Image" />
                 </div>
             </div>
-            <section className='mt-3 border-y border-white/5 bg-white/[0.02] py-12'>
+            <section className='mt-26 border-y border-white/5 bg-white/[0.02] py-12 w-full'>
                 <div className='mx-auto max-w-[1200px] px-6'>
                     <div className='grid grid-cols-2 gap-8 md:grid-cols-4'>
                         <div className='flex flex-col gap-1 border-l border-primary/20 pl-6'>
